@@ -67,31 +67,32 @@ VITE_GEMINI_API_KEY=your_api_key_here
 Experience data structures in a calm, visual environment. Control with your voice and learn at your own pace.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/hero-page.png" alt="Hero Page" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Data-structure-visualizer/main/images/hero-page.png" alt="Hero Page" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
 </div>
 
 ### Learning Modules
 Choose a data structure to explore: Linked Lists, Binary Trees, and Graph Networks.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/learning-modules.png" alt="Learning Modules" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Data-structure-visualizer/main/images/learning-modules.png" alt="Learning Modules" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
 </div>
 
 ### Linked List Visualizer
 Visualize and manipulate singly, doubly, and circular linked lists with step-by-step algorithm explanations and code display.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/linked-list-visualizer.png" alt="Linked List Visualizer" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Data-structure-visualizer/main/images/linked-list-visualizer.png" alt="Linked List Visualizer" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
 </div>
 
 ### Graph Visualizer
 Create custom graphs and run BFS, DFS, and Dijkstra algorithms with real-time visualization of node traversal.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/graph-visualizer.png" alt="Graph Visualizer" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Data-structure-visualizer/main/images/graph-visualizer.png" alt="Graph Visualizer" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
 </div>
 
 ---
+
 
 ## 🧠 AI Features
 
