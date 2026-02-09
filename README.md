@@ -1,6 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
 # DSA Vision - Interactive Data Structures Visualizer
 
@@ -68,19 +65,31 @@ VITE_GEMINI_API_KEY=your_api_key_here
 
 ### Hero Page
 Experience data structures in a calm, visual environment. Control with your voice and learn at your own pace.
-![Hero Page](./images/hero-page.png)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/hero-page.png" alt="Hero Page" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+</div>
 
 ### Learning Modules
 Choose a data structure to explore: Linked Lists, Binary Trees, and Graph Networks.
-![Learning Modules](./images/learning-modules.png)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/learning-modules.png" alt="Learning Modules" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+</div>
 
 ### Linked List Visualizer
 Visualize and manipulate singly, doubly, and circular linked lists with step-by-step algorithm explanations and code display.
-![Linked List Visualizer](./images/linked-list-visualizer.png)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/linked-list-visualizer.png" alt="Linked List Visualizer" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+</div>
 
 ### Graph Visualizer
 Create custom graphs and run BFS, DFS, and Dijkstra algorithms with real-time visualization of node traversal.
-![Graph Visualizer](./images/graph-visualizer.png)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PAVAN-KUMAR1P/Datastructure-Visualizer/main/images/graph-visualizer.png" alt="Graph Visualizer" width="100%" style="max-width: 800px; border-radius: 8px; margin: 20px 0;" />
+</div>
 
 ---
 
