@@ -68,19 +68,19 @@ VITE_GEMINI_API_KEY=your_api_key_here
 
 ### Hero Page
 Experience data structures in a calm, visual environment. Control with your voice and learn at your own pace.
-![Hero Page](https://github.com/user-attachments/assets/hero-page-image)
+![Hero Page](./images/hero-page.png)
 
 ### Learning Modules
 Choose a data structure to explore: Linked Lists, Binary Trees, and Graph Networks.
-![Learning Modules](https://github.com/user-attachments/assets/learning-modules-image)
+![Learning Modules](./images/learning-modules.png)
 
 ### Linked List Visualizer
 Visualize and manipulate singly, doubly, and circular linked lists with step-by-step algorithm explanations and code display.
-![Linked List Visualizer](https://github.com/user-attachments/assets/linked-list-visualizer-image)
+![Linked List Visualizer](./images/linked-list-visualizer.png)
 
 ### Graph Visualizer
 Create custom graphs and run BFS, DFS, and Dijkstra algorithms with real-time visualization of node traversal.
-![Graph Visualizer](https://github.com/user-attachments/assets/graph-visualizer-image)
+![Graph Visualizer](./images/graph-visualizer.png)
 
 ---
 
