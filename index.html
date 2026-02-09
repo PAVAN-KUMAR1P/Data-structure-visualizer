@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedVision | Professional Data Structure Visualizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #06b6d4;
+      --accent: #ec4899;
+      --bg-base: #f8fafc;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow: hidden;
+      background-color: var(--bg-base);
+      margin: 0;
+      position: relative;
+    }
+
+    /* Dynamic Aurora Background */
+    .bg-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      background: #ffffff;
+    }
+
+    .aurora {
+      position: fixed;
+      inset: -50%;
+      z-index: -2;
+      background: radial-gradient(circle at 50% 50%,
+          rgba(79, 70, 229, 0.05) 0%,
+          rgba(6, 182, 212, 0.05) 25%,
+          rgba(236, 72, 153, 0.05) 50%,
+          transparent 100%);
+      filter: blur(100px);
+      animation: aurora-rotate 30s linear infinite;
+    }
+
+    @keyframes aurora-rotate {
+      from {
+        transform: rotate(0deg) scale(1);
+      }
+
+      50% {
+        transform: rotate(180deg) scale(1.2);
+      }
+
+      to {
+        transform: rotate(360deg) scale(1);
+      }
+    }
+
+    /* Refined Dot Grid */
+    .bg-dots {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image: radial-gradient(rgba(79, 70, 229, 0.08) 1px, transparent 1px);
+      background-size: 30px 30px;
+      mask-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5));
+      pointer-events: none;
+    }
+
+    .bg-noise {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.03;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Glassmorphism Refinement */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.02),
+        0 10px 15px -3px rgba(0, 0, 0, 0.03),
+        inset 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .code-font {
+      font-family: 'Fira Code', monospace;
+    }
+
+    .node-transition {
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(79, 70, 229, 0.1);
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(79, 70, 229, 0.2);
+    }
+
+    /* Floating Architectural Orbs */
+    .floating-orb {
+      position: fixed;
+      border-radius: 50%;
+      z-index: -2;
+      opacity: 0.4;
+      pointer-events: none;
+      filter: blur(60px);
+    }
+
+    .orb-purple {
+      width: 300px;
+      height: 300px;
+      background: rgba(79, 70, 229, 0.1);
+      top: 10%;
+      right: 5%;
+      animation: float-slow 20s infinite ease-in-out;
+    }
+
+    .orb-cyan {
+      width: 250px;
+      height: 250px;
+      background: rgba(6, 182, 212, 0.1);
+      bottom: 15%;
+      left: 10%;
+      animation: float-slow 25s infinite ease-in-out reverse;
+    }
+
+    @keyframes float-slow {
+
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+
+      33% {
+        transform: translate(30px, -50px);
+      }
+
+      66% {
+        transform: translate(-20px, 20px);
+      }
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="text-slate-900 selection:bg-indigo-100 selection:text-indigo-700">
+  <!-- Dynamic Background Layers -->
+  <div class="bg-canvas"></div>
+  <div class="aurora"></div>
+  <div class="bg-dots"></div>
+  <div class="bg-noise"></div>
+
+  <div class="floating-orb orb-purple"></div>
+  <div class="floating-orb orb-cyan"></div>
+
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
